@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Crie seu Evento</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <div class="page">
+
+        <header>
+            <h1>
+                Crie e compartilhe seu Evento
+            </h1>
+            <p>
+                O primeiro passo, é preencher esse
+                formulário de inscrição.
+            </p>
+        </header>
+        <form action="" method="get">
+            <!-- Aqui vem os Inputs e a estrutura do form -->
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do Evento</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="nome-evento"> <ion-icon name="bulb-outline" id="lamp"></ion-icon> Título do Evento </label> <ion-icon id="star" name="star-outline"></ion-icon> <br>
+                        <input class="nome-evento" type="text" name="nome-evento" id="nome-evento" required minlength="8" placeholder="Mínimo 8 caracteries">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="link-evento"> <ion-icon name="attach-outline"></ion-icon> Link do Evento</label> <br>
+                        <input class="link-evento" type="url"name="link-evento" id="link-evento"minlength="8" placeholder="https://...">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="zap-evento"> <ion-icon name="logo-whatsapp" id="whatsapp"></ion-icon> Whatsapp Para Contato</label> <ion-icon id="star" name="star-outline"></ion-icon> <br>
+                        <input class="zap-evento" type="number"name="zap-evento"id="zap-evento" required minlength="6" placeholder="119999-9999">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="extra-evento"> <ion-icon name="information-circle-outline" id="info"></ion-icon>Informações extras</label> <br>
+                        <textarea name="extra-evento" id="extra-evento"></textarea>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="categoria-evento"> <ion-icon name="copy-outline"></ion-icon> Categoria</label> <ion-icon id="star" name="star-outline"></ion-icon> <br>
+                        <select name="categoria-evento" id="categoria-evento">
+                            <option value="live">Ao Vivo</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="mentoria">Mentoria</option>
+                            <option value="festa">Festa</option>
+                            <option value="reuniao">Reunião</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper" id="privado">
+                    <legend>Privacidade</legend>
+                    <div class="input-wrapper">
+                        <label for="email-evento">E-mail do Administrador</label> <ion-icon id="star" name="star-outline"></ion-icon><br>
+                        <input class="email-evento" type="email" name="email-evento" id="email-evento" required minlength="8" placeholder="E-mail Válido" />
+    
+                        <div class="input-wrapper">
+                            <label for="password-evento">Senha de acesso para os participantes</label> <ion-icon id="star" name="star-outline"></ion-icon><br>
+                            <input class="password-evento" type="text" name="password-evento" id="password-evento" required  placeholder="Senha de acesso" />
+                </div>
+
+            </fieldset>        
+
+            <fieldset>
+                <div class="col-3">
+                    <legend>Dia e Hora</legend>
+                    <div class="input-wrapper">
+                        <label for="data-evento">Dia</label>  <ion-icon id="star" name="star-outline"></ion-icon> <br>
+                        <input class="data-evento" type="date" name="data-evento" id="data-evento" required minlength="8" placeholder="E-mail Válido" />
+    
+                        <div class="input-wrapper">
+                            <label for="hora-evento">Das</label> <ion-icon id="star" name="star-outline"></ion-icon><br>
+                            <input class="hora-evento" type="time" name="hora-evento" id="hora-evento" required   />
+
+                            <div class="input-wrapper">
+                                <label for="hora1-evento">Até</label> <ion-icon id="star" name="star-outline"></ion-icon><br>
+                                <input class="hora1-evento" type="time" name="hora1-evento" id="hora1-evento" required />
+                </div>
+
+            </fieldset>        
+
+        </form>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
