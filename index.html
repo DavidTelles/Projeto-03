@@ -48,7 +48,7 @@
 
                     <div class="input-wrapper">
                         <label for="categoria-evento"> <ion-icon name="copy-outline"></ion-icon> Categoria</label> <ion-icon id="star" name="star-outline"></ion-icon> <br>
-                        <select name="categoria-evento" id="categoria-evento">
+                        <select name="categoria-evento" id="categoria-evento" required>
                             <option value="live">Ao Vivo</option>
                             <option value="podcast">Podcast</option>
                             <option value="mentoria">Mentoria</option>
@@ -72,6 +72,12 @@
                         <div class="input-wrapper">
                             <label for="password-evento">Senha de acesso para os participantes</label> <ion-icon id="star" name="star-outline"></ion-icon><br>
                             <input class="password-evento" type="text" name="password-evento" id="password-evento" required  placeholder="Senha de acesso" />
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <label for="checkbox-evento">Evento Privado</label>
+                            <input class="checkbox-evento" type="checkbox" name="checkbox-evento" id="checkbox-evento" />
+                        </div>
                 </div>
 
             </fieldset>        
@@ -94,6 +100,9 @@
 
             </fieldset>        
 
+            <div>
+                <input class="button" type="submit" value="Salvar evento">
+            </div>
         </form>
 
     </div>
